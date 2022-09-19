@@ -1,0 +1,160 @@
+/* -----MAIN-SLIDER----------------------------------------------------------- */
+
+.page__main-slider {
+}
+
+.main-slider {
+	position: relative;
+
+	&__item {
+		position: relative;
+		min-height: 612px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__content {
+		//position: absolute;
+		text-align: center;
+		//padding: 30px;
+		//top: 50%;
+		//left: 50%;
+		//max-height: 100%;
+		//overflow-y: auto;
+		//transform: translate3d(-50%,-50%, 0);
+	}
+
+	&__title {
+		font-family: 'DM Serif Display';
+		font-weight: 400;
+		font-size: 64px;
+		line-height: calc(88/64*100%);
+		color: #fff;
+		//white-space: nowrap;
+		margin: 0px 0px 24px 0px;
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__button {
+		min-width: 180px;
+		border-radius: 38px;
+		padding: 16px 0px;
+		cursor: pointer;
+	}
+
+	&__button:not(:last-child) {
+		margin: 0px 32px 0px 0px;
+	}
+
+	&__button_pink {
+		background: #FF8F8F;
+	}
+
+	&__button_pink > a{
+		color: #fff;
+	}
+
+	&__button_pink:hover {
+		background: #E86E6E;
+		transition: 0.5s;
+	}
+
+	&__button_yellow {
+		background: #FFE4BB;
+	}
+
+	&__button_yellow:hover {
+		background: #FFDCA7;
+		transition: 0.5s;
+	}
+
+	&__button_yellow > a {
+		color: #E86E6E;
+	}
+
+	&__link {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: calc(24/16*100%);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track {
+	display: flex;
+}
+
+.main-slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translate3d(0, -50%, 0);
+	z-index: 10;
+	font-size: 0;
+	width: 14px;
+	height: 72px;
+}
+
+.main-slider .slick-arrow.slick-prev {
+	left: 0;
+	background: url("../../img/slider/arrow-l.png") 0 0 / 100% no-repeat;
+	border: none;
+	margin: 0px 0px 0px 45px;
+}
+
+.main-slider .slick-arrow.slick-next {
+	right: 0;
+	background: url("../../img/slider/arrow-r.png") 0 0 / 100% no-repeat;
+	border: none;
+	margin: 0px 45px 0px 0px ;
+}
+
+.main-slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: absolute;
+	left: 50%;
+	bottom: 6%;
+	transform: translate3d(-50%, -6%, 0);
+}
+
+.main-slider .slick-dots li {
+	list-style: none;
+	margin: 0 4px;
+}
+
+.main-slider .slick-dots li.slick-active button{
+	background: #FF8F8F;
+}
+
+.main-slider .slick-dots button {
+	font-size: 0;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	opacity: .7;
+	border: none;
+	border-radius: 50%;
+}
+
+
