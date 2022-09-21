@@ -140,7 +140,7 @@
 	}
 
 	&__link{
-		> .menu-top__icon:hover {
+		> .menu-top__icon:hover{
 			cursor: pointer;
 			transition: 0.5s;
 			color: #FF8F8F;
@@ -196,6 +196,13 @@
 }
 
 .icon-header_phone {
+
+}
+
+.icon-header_phone:hover {
+	cursor: pointer;
+	transition: 0.5s;
+	color: #FF8F8F;
 }
 
 .language {
