@@ -4,6 +4,23 @@ $( document ).ready(
 		$('.main-slider').slick({
 			dots:true,
 		});
+
+		$('.bestsellers-slider__wrapper').slick({
+			dots: true,
+			centerMode: true,
+			centerPadding: '131px',
+			slidesToShow: 5,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 1441,
+					settings: {
+						centerPadding: '227px',
+						slidesToShow: 3
+					}
+				}
+			]
+		})
 	}
 );
 
@@ -25,3 +42,4 @@ const swiper = new Swiper('.swiper', {
 
 	// And if we need scrollbar
 });
+
