@@ -1,0 +1,112 @@
+.page__favorite-books-slider {
+}
+
+.favorite-books-slider {
+}
+
+.favorite-books-slider__wrapper {
+	position: relative;
+	display: flex;
+}
+
+.favorite-books-slider__item {
+	flex: 0 1 50%;
+}
+
+.favorite-books-slider__item_pink {
+	background: #FF8F8F;
+}
+
+.favorite-books-slider__item_blue {
+	background: #CEE8FF;
+}
+
+.favorite-books-slider__content {
+	padding: 120px 0px 130px 0px;
+	text-align: center;
+}
+
+.content-fb {
+}
+
+.content-fb__image {
+
+}
+
+.content-fb__image_bork {
+	margin: 0px 0px 54.15px 0px;
+}
+
+.content-fb__image_rendel {
+	margin: 0px 0px 39.78px 0px;
+}
+
+.content-fb__subtitle {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: calc(30/20*100%);
+	color: #fff;
+	margin: 0px 0px 19px 0px;
+}
+
+.content-fb__rating {
+	margin: 0px 0px 16px 0px;
+}
+
+.content-fb__title {
+	font-family: 'DM Serif Display';
+	font-weight: 400;
+	font-size: 48px;
+	line-height: calc(56/48*100%);
+	margin: 0px 0px 16px 0px;
+}
+
+.content-fb-white-color {
+	color: #fff;
+}
+
+.content-fb-blue-color {
+	color: #105393;
+}
+
+.content-fb__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: calc(24/16*100%);
+}
+
+.icon-fb-star {
+	color: #FFE4BB;
+	font-size: 19.5px;
+}
+
+.icon-fb-star_checked {
+	color: #F2994A;
+}
+
+.favorite-books-slider__wrapper .slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translate3d(0, -50%, 0);
+	font-size: 0;
+	z-index: 20;
+
+}
+
+.favorite-books-slider__wrapper .slick-arrow.slick-prev {
+	left: 0;
+	background: url("../../img/slider/favorite-books-arrow-l.png") 0 0 / 100% no-repeat;
+	width: 21px;
+	height: 40px;
+	border: none;
+	margin: 0px 0px 0px 80px;
+}
+
+.favorite-books-slider__wrapper .slick-arrow.slick-next {
+	right: 0;
+	background: url("../../img/slider/favorite-books-arrow-r.png") 0 0 / 100% no-repeat;
+	border: none;
+	width: 21px;
+	height: 40px;
+	margin: 0px 80px 0px 0px ;
+}

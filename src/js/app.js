@@ -21,6 +21,12 @@ $( document ).ready(
 				}
 			]
 		})
+
+		$('.favorite-books-slider__wrapper').slick({
+			dots: false,
+			arrows: true,
+			slidesToShow: 2,
+		})
 	}
 );
 

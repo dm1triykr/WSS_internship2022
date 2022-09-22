@@ -18,6 +18,11 @@ $(document).ready(function () {
       }
     }]
   });
+  $('.favorite-books-slider__wrapper').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 2
+  });
 });
 const swiper = new Swiper('.swiper', {
   // Optional parameters

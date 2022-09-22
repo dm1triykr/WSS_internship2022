@@ -35,15 +35,6 @@
 	margin: 0px 0px 8px 0px;
 }
 
-//.icon-bs_circle {
-//	position: absolute;
-//	top: 3.8%;
-//	right: 10.5%;
-//
-//	font-size: 40px;
-//	color: #FF8F8F;
-//}
-
 .add-to-wish-button {
 	display: block;
 	position: absolute;
@@ -92,7 +83,10 @@
 .content-bs__button:hover {
 	transition: 0.5s;
 	background: #FF8F8F;
-	color: #fff;
+
+	.content-bs__link {
+		color: #fff;
+	}
 }
 
 .content-bs__link {
@@ -103,14 +97,7 @@
 	text-transform: uppercase;
 	color: #FF8F8F;
 	white-space: nowrap;
-}
-
-.slick-list {
-	overflow: hidden;
-}
-
-.slick-track {
-	display: flex;
+	transition: 0.5s;
 }
 
 .bestsellers-slider__wrapper .slick-arrow {
