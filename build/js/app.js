@@ -58,6 +58,11 @@ $(document).ready(function () {
     dots: true,
     arrows: false
   });
+  $('.content-follow-us__slider').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 6
+  });
 });
 const swiper = new Swiper('.swiper', {
   // Optional parameters

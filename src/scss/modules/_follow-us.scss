@@ -16,7 +16,7 @@
 	width: 109px;
 	height: 81px;
 	top: -1%;
-	left: 8.5%;
+	left: 6.9%;
 }
 
 .follow-us__wrapper::after {
@@ -28,7 +28,7 @@
 	//top: -1%;
 	//left: 7%;
 	top: 19.5%;
-	right: 1.6%;
+	right: 0.5%;
 }
 
 .follow-us__content {
@@ -77,15 +77,27 @@
 	color: #105393;
 }
 
-.content-follow-us__images {
+.content-follow-us__slider {
 	max-width: 1440px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	margin: 0 auto;
+}
+
+.content-follow-us__item {
+	width: 232px;
+	height: 233px;
+}
+
+.content-follow-us__item:not(:last-child) {
+	margin: 0px 8px 0px 0px;
 }
 
 .content-follow-us__image {
 	border-radius: 8px;
+	width: 232px;
+	height: 233px
+
 }
 
 .icon-follow-us-inst {
