@@ -1,5 +1,7 @@
 .page__categories-slider {
-
+	@media (max-width: $breakpoint-medium) {
+		display: none;
+	}
 }
 
 .categories-slider {

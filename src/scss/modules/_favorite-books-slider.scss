@@ -24,6 +24,10 @@
 .favorite-books-slider__content {
 	padding: 120px 0px 130px 0px;
 	text-align: center;
+
+	@media (max-width: $breakpoint-medium) {
+		padding: 80px 0px 80px 0px;
+	}
 }
 
 .content-fb {
@@ -35,10 +39,22 @@
 
 .content-fb__image_bork {
 	margin: 0px 0px 54.15px 0px;
+
+	@media (max-width: $breakpoint-medium) {
+		width: 270px;
+		height: auto;
+
+		margin: 0px 0px 40px 0px;
+	}
 }
 
 .content-fb__image_rendel {
 	margin: 0px 0px 39.78px 0px;
+
+	@media (max-width: $breakpoint-medium) {
+		width: 257px;
+		height: auto;
+	}
 }
 
 .content-fb__subtitle {
@@ -47,10 +63,18 @@
 	line-height: calc(30/20*100%);
 	color: #fff;
 	margin: 0px 0px 19px 0px;
+
+	@media (max-width: $breakpoint-medium) {
+		margin: 0px 0px 11px 0px;
+	}
 }
 
 .content-fb__rating {
 	margin: 0px 0px 16px 0px;
+
+	@media (max-width: $breakpoint-medium) {
+		margin: 0px 0px 10px 0px;
+	}
 }
 
 .content-fb__title {
@@ -59,6 +83,12 @@
 	font-size: 48px;
 	line-height: calc(56/48*100%);
 	margin: 0px 0px 16px 0px;
+
+	@media (max-width: $breakpoint-medium) {
+		font-size: 24px;
+		line-height: calc(32.9/24*100%);
+		margin: 0px 0px 8px 0px;
+	}
 }
 
 .content-fb-white-color {
@@ -73,6 +103,20 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: calc(24/16*100%);
+
+	margin: 0 auto;
+
+	@media (max-width: $breakpoint-medium) {
+		font-size: 14px;
+		line-height: calc(21/14*100%);
+		width: 90%;
+	}
+
+	> br {
+		@media (max-width: $breakpoint-medium) {
+			display: none;
+		}
+	}
 }
 
 .icon-fb-star {
@@ -100,6 +144,15 @@
 	height: 40px;
 	border: none;
 	margin: 0px 0px 0px 80px;
+
+	@media (max-width: $breakpoint-medium) {
+		left: 0%;
+		background: url("data:image/svg+xml,%3Csvg width='11' height='20' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.33333 1.66669L1 10L9.33333 18.3334' stroke='%23105393' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 / 100% no-repeat;
+		width: 10px;
+		height: 20px;
+		border: none;
+		margin: 0px 0px 0px 30px;
+	}
 }
 
 .favorite-books-slider__wrapper .slick-arrow.slick-next {
@@ -109,4 +162,13 @@
 	width: 21px;
 	height: 40px;
 	margin: 0px 80px 0px 0px ;
+
+	@media (max-width: $breakpoint-medium) {
+		right: 0%;
+		background: url("data:image/svg+xml,%3Csvg width='11' height='20' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.66667 1.66669L10 10L1.66667 18.3334' stroke='%23105393' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 / 100% no-repeat;
+		border: none;
+		width: 10px;
+		height: 20px;
+		margin: 0px 30px 0px 0px ;
+	}
 }

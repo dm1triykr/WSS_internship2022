@@ -1,11 +1,13 @@
 .page__retailer-stores-slider {
+	@media (max-width: $breakpoint-medium) {
+		display: none;
+	}
 }
 
 .retailer-stores-slider {
 }
 
 .retailer-stores-slider__container {
-	padding: 120px 0px 0px 0px;
 }
 
 .retailer-stores-slider__title {

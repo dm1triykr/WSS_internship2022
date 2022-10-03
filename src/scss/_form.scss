@@ -133,7 +133,7 @@ textarea {
 	&-btn {
 		cursor: pointer;
 		max-width: 296px;
-		max-height: 48px;
+		height: 48px;
 		background: #FFE4BB;
 		border-radius: 38px;
 		border: none;
@@ -144,7 +144,8 @@ textarea {
 		line-height: calc(24/16*100%);
 		letter-spacing: 0.04em;
 		color: #E86E6E;
-		padding: 12px 102px;
+		padding: 12px 30px;
+		width: 100%;
 	}
 
 	&-btn:hover {
@@ -154,7 +155,7 @@ textarea {
 
 	&-input {
 		max-width: 296px;
-		max-height: 48px;
+		height: 48px;
 		background: #FFFFFF;
 		border-radius: 24px;
 		border: none;

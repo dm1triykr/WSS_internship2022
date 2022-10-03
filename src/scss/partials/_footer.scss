@@ -8,6 +8,11 @@
 		margin: 80px 0px 0px 0px;
 		padding: 0px 0px 64px 0px;
 
+		@media (max-width: $breakpoint-medium) {
+			margin: 40px 0px 0px 0px;
+			padding: 0px 0px 32px 0px;
+		}
+
 		&::after {
 			content: '';
 			position: absolute;
@@ -30,11 +35,33 @@
 
 .top-footer {
 
+	@media (max-width: $breakpoint-medium) {
+		flex-wrap: wrap;
+	}
+
 	&__column {
 		flex: 0 1 25%;
 
 		&:not(:last-child){
-			margin: 0px 32px 0px 0px
+			margin: 0px 32px 0px 0px;
+
+			@media (max-width: $breakpoint-medium) {
+				margin: 0;
+			}
+		}
+
+		@media (max-width: $breakpoint-medium) {
+			flex: 0 1 33.333%;
+			max-width: 33.333%;
+		}
+
+		&:first-child {
+			@media (max-width: $breakpoint-medium) {
+				flex: 0 1 100%;
+				max-width: 100%;
+
+				margin-bottom: 40px;
+			}
 		}
 	}
 	&__title {
@@ -73,14 +100,37 @@
 
 .footer__bottom {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 34px 0px 42px 0px;
+
+	@media (max-width: $breakpoint-medium) {
+		justify-content: space-between;
+	}
 }
 
 .bottom-footer {
 	&__column {
 		flex: 0 1 33.333%;
 		display: flex;
+
+		@media (max-width: $breakpoint-medium) {
+			//&:last-child {
+			//	order: 1;
+			//}
+
+			&:not(:first-child):not(:last-child) {
+				order: 3;
+				flex: 0 1 100%;
+				max-width: 100%;
+			}
+
+			&:first-child, &:last-child {
+				flex: 0 1 auto;
+				margin-bottom: 24px;
+			}
+		}
+
 	}
 
 	&__image {

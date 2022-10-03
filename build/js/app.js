@@ -16,6 +16,13 @@ $(document).ready(function () {
         centerPadding: '227px',
         slidesToShow: 3
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        infinite: false,
+        initialSlide: 1
+      }
     }]
   });
   $('.favorite-books-slider__wrapper').slick({
@@ -61,13 +68,23 @@ $(document).ready(function () {
   $('.content-follow-us__slider').slick({
     dots: false,
     arrows: false,
-    slidesToShow: 6
+    slidesToShow: 6,
+    responsive: [{
+      breakpoint: 1200,
+      settings: {
+        centerMode: true,
+        slidesToShow: 3,
+        infinite: false,
+        initialSlide: 1,
+        centerPadding: "25px"
+      }
+    }]
   });
 });
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination'
@@ -76,6 +93,15 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3 //spaceBetween: 20,
+
+    },
+    750: {
+      slidesPerView: 2
+    }
   } // And if we need scrollbar
 
 }); // function openTab(evt, tabName) {
@@ -101,5 +127,32 @@ const swiper = new Swiper('.swiper', {
 // 	evt.currentTarget.className += " active";
 //
 // 	$('#'+tabName).find('.meet-with-team-slider__slides:not(.refreshed)').slick('reinit').addClass('refreshed');
+// }
+
+$('.burger-btn').click(function (e) {
+  e.preventDefault();
+  var target = $(this).toggleClass('burger-btn_active').attr('data-target');
+  $(target).toggleClass('active');
+}); // function drop_sm() {
+// 	var dropDown = document.getElementById("drop-sub-menu");
+//
+// 	if (dropDown.currentStyle) {
+// 		var displayStyle = dropDown.currentStyle.display;
+// 	} else if (window.getComputedStyle) {
+// 		var displayStyle = window.getComputedStyle(dropDown, null).getPropertyValue("display");
+// 	}
+//
+// 	if (displayStyle == "none") {
+// 		dropDown.style.display = "block";
+// 	}
+// 	else {
+// 		dropDown.style.display = "none";
+// 	}
+// }
+// let button = document.querySelector('.burger-menu__item-parrent'); //ищем кнопку
+// let menu = document.querySelector('.sub-menu-burger'); //ищем в DOM элемент с классом навигации, которая скрыта за бургером
+//
+// button.onclick = () => { //накидываем на кнопку обработчик событий по клику.
+// 	menu.classList.toggle('sub-menu-burger--active'); // тут добавляешь класс к меню, который будет открывать это меню
 // }
 //# sourceMappingURL=app.js.map
