@@ -1,23 +1,13 @@
 /**
-
  * Swiper 8.4.0
-
  * Most modern mobile touch slider and framework with hardware accelerated transitions
-
  * https://swiperjs.com
-
  *
-
  * Copyright 2014-2022 Vladimir Kharlampidi
-
  *
-
  * Released under the MIT License
-
  *
-
  * Released on: September 14, 2022
-
  */
 !function (e, t) {
   "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : (e = "undefined" != typeof globalThis ? globalThis : e || self).Swiper = t();

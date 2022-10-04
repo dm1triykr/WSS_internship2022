@@ -19,9 +19,11 @@ $(document).ready(function () {
     }, {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 2,
-        infinite: false,
-        initialSlide: 1
+        slidesToShow: 2.3,
+        centerMode: false,
+        infinite: false //currentSlide: 2,
+        //centerPadding: '46px'
+
       }
     }]
   });

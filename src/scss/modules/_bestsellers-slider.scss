@@ -17,6 +17,12 @@
 	line-height: calc(88/64*100%);
 	color: #E86E6E;
 	margin: 0px 0px 48px 0px;
+
+	@media (max-width: $breakpoint-medium) {
+		font-size: 48px;
+		line-height: calc(65.81/48*100%);
+		margin: 0px 0px 38px 0px;
+	}
 }
 
 .bestsellers-slider__item {
@@ -152,4 +158,8 @@
 	opacity: 1;
 }
 
-
+//.bestsellers-slider__wrapper .slick-list {
+//	@media (max-width: $breakpoint-medium) {
+//		transform: translate(-33px, 0);
+//	}
+//}

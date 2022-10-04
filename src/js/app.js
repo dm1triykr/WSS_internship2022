@@ -22,9 +22,11 @@ $( document ).ready(
 				{
 					breakpoint: 1200,
 					settings: {
-						slidesToShow: 2,
+						slidesToShow: 2.3,
+						centerMode: false,
 						infinite: false,
-						initialSlide: 1,
+						//currentSlide: 2,
+						//centerPadding: '46px'
 					}
 				}
 			]
