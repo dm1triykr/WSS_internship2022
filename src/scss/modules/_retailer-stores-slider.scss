@@ -1,92 +1,83 @@
-.page__retailer-stores-slider {
-	@media (max-width: $breakpoint-medium) {
-		display: none;
+.retailer-stores-slider {
+
+	&__title {
+		text-align: center;
+		font-family: 'DM Serif Display';
+		font-weight: 400;
+		font-size: 64px;
+		line-height: calc(88/64*100%);
+		color: #E86E6E;
+	}
+
+	&__slides {
+		position: relative;
+		display: flex;
+
+		& .slick-dots {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			position: absolute;
+			left: 50%;
+			bottom: 23%;
+			transform: translate3d(-50%, -6%, 0);
+
+			li {
+				list-style: none;
+				margin: 0 4px;
+
+				&.slick-active button{
+					background: #FF8F8F;
+					opacity: 1;
+				}
+			}
+
+			button {
+				font-size: 0;
+				width: 15px;
+				height: 15px;
+				background: #FF8F8F;
+				opacity: 0.3;
+				border: none;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	&__content {
+		&:first-child {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 215px;
+			margin: 80px 0px 215px 0px;
+		}
 	}
 }
 
-.retailer-stores-slider {
-}
-
-.retailer-stores-slider__container {
-}
-
-.retailer-stores-slider__title {
-	text-align: center;
-	font-family: 'DM Serif Display';
-	font-weight: 400;
-	font-size: 64px;
-	line-height: calc(88/64*100%);
-	color: #E86E6E;
-}
-
-.retailer-stores-slider__slides {
-	position: relative;
-	display: flex;
-}
-
-.retailer-stores-slider__content:first-child {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 215px;
-	margin: 80px 0px 215px 0px;
-}
-
 .content-rs {
+
+	&__top-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__bottom-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&_first-slide > img:first-child {
+			margin: 0px 0px 0px 63px;
+		}
+		&_first-slide > img:last-child {
+			margin: 0px 31px 0px 0px;
+		}
+	}
+
+	&__image {
+	}
 }
 
-.content-rs__top-row {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.content-rs__bottom-row {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	//margin: 68px 0px 0px 0px;
-}
-
-.content-rs__bottom-row_first-slide > img:first-child {
-	margin: 0px 0px 0px 63px;
-}
-
-.content-rs__bottom-row_first-slide > img:last-child {
-	margin: 0px 31px 0px 0px;
-}
-
-.content-rs__image {
-}
-
-.retailer-stores-slider__slides .slick-dots {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	position: absolute;
-	left: 50%;
-	bottom: 23%;
-	transform: translate3d(-50%, -6%, 0);
-}
-
-.retailer-stores-slider__slides .slick-dots li {
-	list-style: none;
-	margin: 0 4px;
-}
-
-.retailer-stores-slider__slides .slick-dots li.slick-active button{
-	background: #FF8F8F;
-	opacity: 1;
-}
-
-.retailer-stores-slider__slides .slick-dots button {
-	font-size: 0;
-	width: 15px;
-	height: 15px;
-	background: #FF8F8F;
-	opacity: 0.3;
-	border: none;
-	border-radius: 50%;
-}

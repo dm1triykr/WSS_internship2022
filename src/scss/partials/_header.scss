@@ -67,8 +67,6 @@
 	}
 }
 
-
-
 .icon-01 {
 }
 
@@ -333,7 +331,9 @@
 .icon-arrow {
 	color: #FF8F8F;
 	font-size: 4px;
-	margin: 0px 0px 0px 7px;
+	margin: 0px 0px 0px 1px;
+	background: none;
+	border: none;
 }
 
 .sub-menu {
@@ -384,67 +384,6 @@
 		visibility: visible;
 	}
 }
-
-//.burger-btn {
-//	cursor: pointer;
-//	display: block;
-//	height: 30px;
-//	width: 30px;
-//	background-color: transparent;
-//	border: none;
-//	padding: 0;
-//	position: relative;
-//	z-index: 999;
-//
-//	span,
-//	span:before,
-//	span:after {
-//		display: block;
-//		width: 100%;
-//		height: 2px;
-//		background-color: $dark-gray;
-//		transition: all 0.3s;
-//		backface-visibility: hidden;
-//		border-radius: 2px;
-//	}
-//
-//	span {
-//		position: absolute;
-//		top: 7px;
-//	}
-//
-//	span::after,
-//	span::before {
-//		content: "";
-//		position: absolute;
-//		left: 0;
-//	}
-//
-//	span::before {
-//		top: 8px;
-//	}
-//
-//	span::after {
-//		top: 16px;
-//	}
-//
-//	&_active {
-//		span {
-//			background-color: transparent;
-//		}
-//
-//		span:before {
-//			transform: rotate(45deg) translate(-1px, 0px);
-//			background-color: $black;
-//		}
-//
-//		span:after {
-//			transform: rotate(-45deg) translate(6px, -7px);
-//			background-color: $black;
-//		}
-//	}
-//}
-
 
 .burger-btn {
 	display: none;
@@ -507,13 +446,6 @@
 	}
 }
 
-.burger-menu__icon {
-	font-size: 18px;
-	font-weight: 400;
-	line-height: calc(20/14*100%);
-	color: #414249;
-}
-
 .burger-menu {
 	position: absolute;
 	z-index: 100;
@@ -527,10 +459,44 @@
 		visibility: visible;
 		opacity: 1;
 	}
-}
 
-.burger-menu__icons-bar {
+	&__icon {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: calc(20/14*100%);
+		color: #414249;
+	}
 
+	&__icons-bar {
+
+	}
+
+	&__link {
+		color: #414249;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: calc(27/18*100%);
+		letter-spacing: 0.5px;
+
+		text-transform: uppercase;
+	}
+
+	&__icon {
+	}
+
+	&__language {
+		position: relative;
+		font-weight: 600;
+	}
+
+	&__list {
+		padding: 24px 30px;
+		background: #fff;
+
+		> .burger-menu__item:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
 }
 
 .icons-bar {
@@ -542,79 +508,25 @@
 
 	border-top: 1px solid #FED9D9;
 	border-bottom: 1px solid #FED9D9;
-}
 
-.icons-bar__column {
-	position: relative;
+	&__column {
+		position: relative;
 
-	text-align: center;
-	flex: 0 1 33.333%;
-	padding: 10px 0px;
-}
+		text-align: center;
+		flex: 0 1 33.333%;
+		padding: 10px 0px;
 
-.icons-bar__column:not(:last-child)::after {
-	position: absolute;
-	content: '';
-	width: 1px;
-	height: 24px;
-	background: #FED9D9;
-	top: 50%;
-	transform: translate(0, -50%);
-	right: 0;
-}
-
-.burger-menu__link {
-	color: #414249;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: calc(27/18*100%);
-	letter-spacing: 0.5px;
-
-	text-transform: uppercase;
-}
-
-.burger-menu__icon {
-}
-
-.burger-menu__language {
-	position: relative;
-	font-weight: 600;
-}
-
-.language {
-}
-
-.language__link {
-}
-
-.language__list {
-}
-
-.sub-menu {
-}
-
-.sub-menu_lang {
-}
-
-.language__item {
-}
-
-.burger-menu__list {
-	padding: 24px 30px;
-	background: #fff;
-}
-
-.burger-menu__list > .burger-menu__item:not(:last-child) {
-	margin-bottom: 24px;
-}
-
-.burger-menu__item {
-}
-
-.burger-menu__item-parrent {
-}
-
-.burger-menu__sub-menu {
+		&:not(:last-child)::after {
+			position: absolute;
+			content: '';
+			width: 1px;
+			height: 24px;
+			background: #FED9D9;
+			top: 50%;
+			transform: translate(0, -50%);
+			right: 0;
+		}
+	}
 }
 
 .sub-menu-burger {
@@ -622,26 +534,27 @@
 	margin-left: 9px;
 
 	display: none;
-	//visibility: hidden;
-	//opacity: 0;
-	transition: 0.5s;
+
+	&--active {
+		display: block;
+	}
+
+	> .burger-menu__item {
+		margin-bottom: 24px;
+
+		> .burger-menu__link {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: calc(24/16*100%);
+
+			text-transform: none;
+			letter-spacing: normal;
+		}
+	}
 }
 
-.sub-menu-burger--active {
-	display: block;
-	//visibility: visible;
-	//opacity: 1;
-}
 
-.sub-menu-burger > .burger-menu__item > .burger-menu__link {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: calc(24/16*100%);
 
-	text-transform: none;
-	letter-spacing: normal;
-}
 
-.sub-menu-burger > .burger-menu__item {
-	margin-bottom: 24px;
-}
+
+

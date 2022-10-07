@@ -128,57 +128,13 @@ const swiper = new Swiper('.swiper', {
 	// And if we need scrollbar
 });
 
-// function openTab(evt, tabName) {
-// 	// Declare all variables
-// 	var i, tabcontent, tablinks;
-//
-// 	// Get all elements with class="tabcontent" and hide them
-// 	tabcontent = document.getElementsByClassName("tab__content");
-// 	console.log(tabcontent);
-// 	for (i = 0; i < tabcontent.length; i++) {
-// 		tabcontent[i].style.display = "none";
-// 	}
-//
-// 	// Get all elements with class="tablinks" and remove the class "active"
-// 	tablinks = document.getElementsByClassName("tab__link");
-// 	console.log(tablinks);
-// 	for (i = 0; i < tablinks.length; i++) {
-// 		tablinks[i].className = tablinks[i].className.replace(" active", "");
-// 	}
-//
-// 	// Show the current tab, and add an "active" class to the button that opened the tab
-// 	document.getElementById(tabName).style.display = "block";
-// 	evt.currentTarget.className += " active";
-//
-// 	$('#'+tabName).find('.meet-with-team-slider__slides:not(.refreshed)').slick('reinit').addClass('refreshed');
-// }
-
 $('.burger-btn').click(function (e) {
 	e.preventDefault();
 	var target = $(this).toggleClass('burger-btn_active').attr('data-target');
 	$(target).toggleClass('active');
 });
 
-// function drop_sm() {
-// 	var dropDown = document.getElementById("drop-sub-menu");
-//
-// 	if (dropDown.currentStyle) {
-// 		var displayStyle = dropDown.currentStyle.display;
-// 	} else if (window.getComputedStyle) {
-// 		var displayStyle = window.getComputedStyle(dropDown, null).getPropertyValue("display");
-// 	}
-//
-// 	if (displayStyle == "none") {
-// 		dropDown.style.display = "block";
-// 	}
-// 	else {
-// 		dropDown.style.display = "none";
-// 	}
-// }
-
-// let button = document.querySelector('.burger-menu__item-parrent'); //ищем кнопку
-// let menu = document.querySelector('.sub-menu-burger'); //ищем в DOM элемент с классом навигации, которая скрыта за бургером
-//
-// button.onclick = () => { //накидываем на кнопку обработчик событий по клику.
-// 	menu.classList.toggle('sub-menu-burger--active'); // тут добавляешь класс к меню, который будет открывать это меню
-// }
+jQuery('.burger-menu__item .icon-arrow').click(function(e){
+	e.preventDefault();
+	jQuery(this).parent('.burger-menu__link').next('.burger-menu__sub-menu').slideToggle();
+});

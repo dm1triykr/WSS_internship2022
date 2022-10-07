@@ -103,3 +103,37 @@
 .page {
 	flex: 1 1 auto;
 }
+
+.page__advantages {
+}
+
+.page__bestsellers-slider {
+}
+
+.page__categories-slider {
+	@media (max-width: $breakpoint-medium) {
+		display: none;
+	}
+}
+
+.page__favorite-books-slider {
+}
+
+.page__follow-us {
+}
+
+.page__main-slider {
+}
+
+.page__making-process {
+}
+
+.page__meet-with-team-slider {
+
+}
+
+.page__retailer-stores-slider {
+	@media (max-width: $breakpoint-medium) {
+		display: none;
+	}
+}

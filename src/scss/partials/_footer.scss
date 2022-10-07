@@ -91,6 +91,10 @@
 		font-weight: 400;
 		line-height: calc(21/14*100%);
 		color: #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -115,9 +119,6 @@
 		display: flex;
 
 		@media (max-width: $breakpoint-medium) {
-			//&:last-child {
-			//	order: 1;
-			//}
 
 			&:not(:first-child):not(:last-child) {
 				order: 3;
@@ -165,26 +166,4 @@
 	color: #fff;
 	font-size: 20px;
 	margin: 0px 0px 0px 23px;
-}
-
-.icon-sm1 {
-}
-
-.icon-sm2 {
-}
-
-.icon-sm3 {
-}
-
-.icon-sm4 {
-}
-
-.icon-sm5 {
-}
-
-.icon-sm6 {
-}
-
-.top-footer__link:hover {
-	text-decoration: underline;
 }
