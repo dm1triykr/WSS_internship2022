@@ -15,36 +15,110 @@
 	line-height: calc(88/64*100%);
 	color: #E86E6E;
 
-	margin: 120px 0px 48px 0px;
+	margin: 120px 0px 0px 0px;
+
+	@media (max-width: $breakpoint-medium) {
+		margin: 83px 0px 0px 0px;
+		font-size: 48px;
+		line-height: calc(65.81/48*100%);
+	}
 }
 
 .making-process__content {
+	position: relative;
 	display: flex;
 	align-items: center;
-	margin: 0px 0px 130px 0px;
+	margin: 0px 0px 190px 0px;
+	flex-direction: column;
+
+	@media (max-width: $breakpoint-medium) {
+		margin: 0px 0px 80px 0px;
+	}
+}
+
+.making-process__image {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-top: 48px;
+
+	@media (max-width: $breakpoint-medium) {
+		margin-top: 15px;
+		position: static;
+		text-align: center;
+		transform: translate(0, 0);
+	}
+}
+
+.making-process__content > img {
+
+}
+
+.row-mp {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+}
+
+.row-mp:first-child {
+	margin-top: 112px;
+
+	@media (max-width: $breakpoint-medium) {
+		margin-top: 39px;
+	}
+}
+
+.row-mp:last-child {
+	@media (max-width: $breakpoint-medium) {
+		margin-top: 48px;
+	}
+}
+
+.row-mp:not(:last-child) {
+	margin-bottom: 33px;
 }
 
 .making-process__column {
-	//flex: 0 1 33.333%;
 	text-align: center;
 }
 
-.making-process__column:first-child {
-	padding: 0px 90px 0px 0px;
-	flex: 0 1 30%;
+.making-process__column:nth-child(odd) {
+	margin-left: 43px;
+
+	@media (max-width: $breakpoint-medium) {
+		margin-left: 0px;
+		margin-right: 15px;
+		//padding: 0 10px;
+	}
 }
 
-.making-process__column:not(:first-child):not(:last-child) {
-	flex: 0 1 40%;
-}
+.making-process__column:nth-child(even) {
+	margin-right: 43px;
 
-.making-process__column:last-child {
-	padding: 0px 0px 0px 90px;
-	flex: 0 1 30%;
+	@media (max-width: $breakpoint-medium) {
+		margin-right: 0px;
+		margin-left: 15px;
+		//padding: 0 10px;
+	}
 }
-
-.column-mp {
-}
+//
+//.making-process__column:first-child {
+//	padding: 0px 90px 0px 0px;
+//	flex: 0 1 30%;
+//}
+//
+//.making-process__column:not(:first-child):not(:last-child) {
+//	flex: 0 1 40%;
+//}
+//
+//.making-process__column:last-child {
+//	padding: 0px 0px 0px 90px;
+//	flex: 0 1 30%;
+//}
+//
+//.column-mp {
+//}
 
 .column-mp__title {
 	font-weight: 600;
@@ -59,6 +133,18 @@
 	font-size: 16px;
 	line-height: calc(24/16*100%);
 	color: #414249;
+
+	@media (max-width: $breakpoint-medium) {
+		font-size: 14px;
+		line-height: calc(21/14*100%);
+
+	}
+
+	> br {
+		@media (max-width: $breakpoint-medium) {
+			display: none;
+		}
+	}
 }
 
 .column-mp__text:not(:last-child) {
