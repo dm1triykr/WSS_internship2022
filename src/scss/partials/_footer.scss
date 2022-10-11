@@ -2,6 +2,11 @@
 .footer {
 	background: #FF8F8F;
 
+	@media (max-width: $breakpoint-small) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	&__top {
 		display: flex;
 		position: relative;
@@ -11,6 +16,11 @@
 		@media (max-width: $breakpoint-medium) {
 			margin: 40px 0px 0px 0px;
 			padding: 0px 0px 32px 0px;
+		}
+
+		@media (max-width: $breakpoint-small) {
+			margin: 40px 0px 0px 0px;
+			padding: 0px 0px 24px 0px;
 		}
 
 		&::after {
@@ -48,11 +58,21 @@
 			@media (max-width: $breakpoint-medium) {
 				margin: 0;
 			}
+
+			@media (max-width: $breakpoint-small) {
+				margin-bottom: 40px !important;
+			}
 		}
 
 		@media (max-width: $breakpoint-medium) {
 			flex: 0 1 33.333%;
 			max-width: 33.333%;
+		}
+
+		@media (max-width: $breakpoint-small) {
+			flex: 0 1 100%;
+			max-width: 100%;
+			padding: 0 !important;
 		}
 
 		&:first-child {
@@ -111,6 +131,10 @@
 	@media (max-width: $breakpoint-medium) {
 		justify-content: space-between;
 	}
+
+	@media (max-width: $breakpoint-small) {
+		justify-content: center;
+	}
 }
 
 .bottom-footer {
@@ -132,6 +156,11 @@
 			}
 		}
 
+		@media (max-width: $breakpoint-small) {
+			&:first-child {
+				order: 2;
+			}
+		}
 	}
 
 	&__image {
@@ -160,6 +189,10 @@
 
 .social-media-column {
 	justify-content: right;
+
+	@media (max-width: $breakpoint-small) {
+		margin-right: 20px;
+	}
 }
 
 .sm-icons {

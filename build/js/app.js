@@ -25,12 +25,25 @@ $(document).ready(function () {
         //centerPadding: '46px'
 
       }
+    }, {
+      breakpoint: 751,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '0px'
+      }
     }]
   });
   $('.favorite-books-slider__wrapper').slick({
     dots: false,
     arrows: true,
-    slidesToShow: 2
+    slidesToShow: 2,
+    responsive: [{
+      breakpoint: 751,
+      settings: {
+        slidesToShow: 1.07,
+        infinite: false
+      }
+    }]
   });
   $('.meet-with-team-slider__tabs').slick({
     dots: false,
@@ -79,6 +92,13 @@ $(document).ready(function () {
         infinite: false,
         initialSlide: 1,
         centerPadding: "25px"
+      }
+    }, {
+      breakpoint: 751,
+      settings: {
+        slidesToShow: 1.27,
+        centerMode: false,
+        infinite: false
       }
     }]
   });
