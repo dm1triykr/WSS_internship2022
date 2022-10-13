@@ -18,37 +18,37 @@
 <!-- BEGIN  wrapper-->
 <div class="wrapper">
 	<header class="header">
-	<div class="header__swiper">
-		<div class="swiper__container _container">
-			<div class="swiper">
+	<div class="header__announcement-bar">
+		<div class="announcement-bar__container _container">
+			<div class="announcement-bar">
 				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
+				<div class="announcement-bar__wrapper">
 					<!-- Slides -->
-					<div class="swiper-slide top-feature">
+					<div class="announcement-bar__slide top-feature">
 						<i class="top-feature__image icon-01"></i>
 						<div class="top-feature__text">
 							Free shipping from 60€ (DE)
 						</div>
 					</div>
-					<div class="swiper-slide top-feature top-feature_high-quality">
+					<div class="announcement-bar__slide top-feature top-feature_high-quality">
 						<i class="top-feature__image icon-02"></i>
 						<div class="top-feature__text">
 							High quality hand-mand & ethical products
 						</div>
 					</div>
-					<div class="swiper-slide top-feature">
+					<div class="announcement-bar__slide top-feature">
 						<i class="top-feature__image icon-03"></i>
 						<div class="top-feature__text">
 							6 Months guarantee
 						</div>
 					</div>
-					<div class="swiper-slide top-feature">
+					<div class="announcement-bar__slide top-feature">
 						<i class="top-feature__image icon-04"></i>
 						<div class="top-feature__text">
 							The favourite of XXXX partners
 						</div>
 					</div>
-					<div class="swiper-slide top-feature">
+					<div class="announcement-bar__slide top-feature">
 						<div class="top-feature__image top-feature__image_svg">
 							<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M24.3351 14.9353H8.66497C8.11259 14.9353 7.59413 14.667 7.27564 14.2155C6.9567 13.7645 6.8771 13.1863 7.06167 12.6656C8.47451 8.67864 12.2678 6 16.5009 6C20.7335 6 24.5264 8.67864 25.9393 12.6656C26.1238 13.1863 26.0442 13.7645 25.7253 14.2155C25.4059 14.667 24.8879 14.9353 24.3351 14.9353ZM11.6399 11.5328H21.3601C20.1327 10.205 18.3824 9.40293 16.5005 9.40293C14.6181 9.40293 12.8673 10.205 11.6399 11.5328Z" fill="#414249"/>
@@ -63,7 +63,7 @@
 							Made in Germany
 						</div>
 					</div>
-					<div class="swiper-slide top-feature">
+					<div class="announcement-bar__slide top-feature">
 						<i class="top-feature__image icon-06"></i>
 						<div class="top-feature__text">
 							Free parts replacement service
@@ -71,8 +71,8 @@
 					</div>
 				</div>
 				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+<!--				<div class="swiper-button-prev"></div>-->
+<!--				<div class="swiper-button-next"></div>-->
 			</div>
 		</div>
 	</div>
@@ -265,6 +265,43 @@
 
 
 	<main class="page">
+		<div class="page__categories-slider-mobile categories-slider-mobile">
+			<div class="categories-slider-mobile__wrapper">
+				<div class="categories-slider-mobile__content content-ctgrs-mob">
+					<div class="content-ctgrs-mob__item">
+						<div class="content-ctgrs-mob__sub-item">
+							<img src="img/categories-slider-mobile/01.png" alt="" class="content-ctgrs-mob__image">
+							<h3 class="content-ctgrs-mob__title">Quiet Books</h3>
+						</div>
+					</div>
+					<div class="content-ctgrs-mob__item">
+						<div class="content-ctgrs-mob__sub-item">
+							<img src="img/categories-slider-mobile/02.png" alt="" class="content-ctgrs-mob__image">
+							<h3 class="content-ctgrs-mob__title">Mini Quiet Books</h3>
+						</div>
+					</div>
+					<div class="content-ctgrs-mob__item">
+						<div class="content-ctgrs-mob__sub-item">
+							<img src="img/categories-slider-mobile/03.png" alt="" class="content-ctgrs-mob__image">
+							<h3 class="content-ctgrs-mob__title">Booklets</h3>
+						</div>
+					</div>
+					<div class="content-ctgrs-mob__item">
+						<div class="content-ctgrs-mob__sub-item">
+							<img src="img/categories-slider-mobile/04.png" alt="" class="content-ctgrs-mob__image">
+							<h3 class="content-ctgrs-mob__title">Wooden Toys</h3>
+						</div>
+					</div>
+					<div class="content-ctgrs-mob__item">
+						<div class="content-ctgrs-mob__sub-item">
+							<img src="img/categories-slider-mobile/05.png" alt="" class="content-ctgrs-mob__image">
+							<h3 class="content-ctgrs-mob__title">Wall decorations</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="page__main-slider main-slider">
 			<div class="main-slider__item">
 				<div class="main-slider__content">
@@ -372,7 +409,7 @@
 					</h3>
 				</div>
 				<div class="advantages__content">
-					<div class="advantages__row advantages__row_top">
+					<div class="advantages__slide">
 						<div class="advantages__column column-adv">
 							<div class="column-adv__image">
 								<img src="img/advantages/01.jpg" alt="">
@@ -383,7 +420,9 @@
 								enhance their fine motor<br> skills and develop their<br> imagination
 							</div>
 						</div>
-						<div class="advantages__column column-adv" style="transform: translate(0px, 106px)">
+					</div>
+					<div class="advantages__slide" style="transform: translate(-5px, 106px)">
+						<div class="advantages__column column-adv" >
 							<div class="column-adv__image">
 								<img src="img/advantages/02.jpg" alt="">
 							</div>
@@ -393,7 +432,9 @@
 								your long journeys or<br> dinners at the restaurant.
 							</div>
 						</div>
-						<div class="advantages__column column-adv" style="transform: translate(0px, 54px)">
+					</div>
+					<div class="advantages__slide" style="transform: translate(0, 52px)">
+						<div class="advantages__column column-adv" >
 							<div class="column-adv__image">
 								<img src="img/advantages/03.jpg" alt="">
 							</div>
@@ -403,8 +444,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="advantages__row advantages__row_bottom">
-						<div class="advantages__column column-adv" style="transform: translate(13px, -55px)">
+					<div class="advantages__slide" style="transform: translate(10px, 33px)">
+						<div class="advantages__column column-adv" >
 							<div class="column-adv__image">
 								<img src="img/advantages/04.jpg" alt="">
 							</div>
@@ -414,7 +455,9 @@
 								on from generation<br> to generation
 							</div>
 						</div>
-						<div class="advantages__column column-adv" style="transform: translate(-16px, -30px)">
+					</div>
+					<div class="advantages__slide" style="transform: translate(-17px, 60px)">
+						<div class="advantages__column column-adv" >
 							<div class="column-adv__image">
 								<img src="img/advantages/05.jpg" alt="">
 							</div>

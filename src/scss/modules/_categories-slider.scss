@@ -21,6 +21,10 @@
 		justify-content: center;
 		//margin: 0 -100px;
 		//transform: translate(165px, 0);
+
+		@media (max-width: 1440px) {
+			padding-left: 80px;
+		}
 	}
 
 	&__item {

@@ -110,6 +110,14 @@
 	flex: 1 1 auto;
 }
 
+.page__categories-slider-mobile {
+	display: none;
+
+	@media (max-width: $breakpoint-small) {
+		display: block;
+	}
+}
+
 .page__advantages {
 }
 
