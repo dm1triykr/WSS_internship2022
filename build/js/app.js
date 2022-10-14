@@ -125,27 +125,31 @@ $(document).ready(function () {
       }
     }]
   });
-  $('.advantages__content').slick({
-    slidesToShow: 1,
-    dots: true,
-    arrows: false
-  });
-  $(window).resize(function () {
-    if ($(".advantages__content").hasClass(".slick-initialized")) {} else {
-      var res = $(window);
+  var res = $(window);
 
-      if (res.innerWidth() <= 639) {
-        $('.advantages__content').slick({
-          slidesToShow: 3,
-          dots: true,
-          arrows: false,
-          centerMode: true,
-          centerPadding: "50px",
-          infinite: true
-        });
-      } else {
-        $('.advantages__content').slick('unslick');
-      }
+  if (res.innerWidth() <= 639) {
+    $('.advantages__content:not(.slick-initialized)').slick({
+      slidesToShow: 1,
+      dots: true,
+      arrows: false,
+      centerMode: true,
+      centerPadding: '15px'
+    });
+  }
+
+  $(window).resize(function () {
+    var res = $(window);
+
+    if (res.innerWidth() <= 639) {
+      $('.advantages__content:not(.slick-initialized)').slick({
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '15px'
+      });
+    } else {
+      $('.advantages__content').slick('unslick');
     }
   });
 });

@@ -149,30 +149,29 @@ $( document ).ready(
 			]
 		})
 
-		$('.advantages__content').slick({
-			slidesToShow: 1,
-			dots: true,
-			arrows: false,
-		})
+		var res = $(window);
+		if(res.innerWidth() <= 639) {
+			$('.advantages__content:not(.slick-initialized)').slick({
+				slidesToShow: 1,
+				dots: true,
+				arrows: false,
+				centerMode: true,
+				centerPadding: '15px',
+			})
+		}
 
 		$(window).resize(function(){
-			if($(".advantages__content").hasClass(".slick-initialized")) {
-
+			var res = $(window);
+			if(res.innerWidth() <= 639) {
+				$('.advantages__content:not(.slick-initialized)').slick({
+					slidesToShow: 1,
+					dots: true,
+					arrows: false,
+					centerMode: true,
+					centerPadding: '15px',
+				})
 			} else {
-				var res = $(window);
-				if(res.innerWidth() <= 639) {
-
-					$('.advantages__content').slick({
-						slidesToShow: 3,
-						dots: true,
-						arrows: false,
-						centerMode: true,
-						centerPadding: "50px",
-						infinite: true,
-					})
-				} else {
-					$('.advantages__content').slick('unslick');
-				}
+				$('.advantages__content').slick('unslick');
 			}
 		});
 	}
