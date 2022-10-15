@@ -95,7 +95,8 @@
 /* -----PAGE----------------------------------------------------------- */
 .page {
 	flex: 1 1 auto;
-
+	display: flex;
+	flex-direction: column;
 }
 
 .page__categories-slider-mobile {
@@ -114,11 +115,12 @@
 
 .page__categories-slider {
 	@media (max-width: $breakpoint-medium) {
-		//display: none;
+		display: none;
 	}
 
 	@media (max-width: $breakpoint-small) {
-		order: 1;
+		order: -1;
+		display: block;
 	}
 }
 

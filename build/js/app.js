@@ -73,13 +73,17 @@ $(document).ready(function () {
     arrows: false,
     dots: false,
     slidesToShow: 5,
-    // centerMode: true,
     infinite: false,
-    //initialSlide: 2,
     responsive: [{
       breakpoint: 1441,
       settings: {
         slidesToShow: 4.22,
+        variableWidth: true
+      }
+    }, {
+      breakpoint: 751,
+      settings: {
+        slidesToShow: 3.5,
         variableWidth: true
       }
     }]
